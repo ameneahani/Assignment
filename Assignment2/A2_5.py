@@ -1,0 +1,5 @@
+second = int(input("Please enter your time(second) : "))
+houre = int(second / 3600)
+minute = int(((second/3600)- houre)*60)
+second = int(second-houre*3600-minute*60)
+print(houre, ":", minute, ":", second)
