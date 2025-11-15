@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sudoku Game</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>481</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="grid_layout"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>506</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Game</string>
+    </property>
+    <widget class="QMenu" name="menunew">
+     <property name="title">
+      <string>New...</string>
+     </property>
+     <addaction name="menu_new_puzzle"/>
+     <addaction name="menu_solve_puzzle"/>
+    </widget>
+    <addaction name="menunew"/>
+    <addaction name="menu_open_file"/>
+    <addaction name="menu_About"/>
+    <addaction name="menu_Help"/>
+    <addaction name="menu_Exit"/>
+   </widget>
+   <addaction name="menuGame"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menu_open_file">
+   <property name="text">
+    <string>Open file</string>
+   </property>
+  </action>
+  <action name="menu_About">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="menu_Help">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="menu_Exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="menu_new_puzzle">
+   <property name="text">
+    <string>New Puzzle</string>
+   </property>
+  </action>
+  <action name="menu_solve_puzzle">
+   <property name="text">
+    <string>Solve Puzzle</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

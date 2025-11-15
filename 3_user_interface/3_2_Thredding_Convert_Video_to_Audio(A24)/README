@@ -1,0 +1,62 @@
+🛸 Spaceship Game & Multithreading Exercise
+
+This project demonstrates Python multithreading through two practical examples — one focusing on file processing and another on a real-time 2D game.
+
+⚙️ Part 1 — Video to Audio Conversion
+
+🎬 In this part, a video file is converted into an audio file in two ways to compare performance:
+
+Mode	Description	Average Time
+🕒 Without Threading	Sequential conversion	~16 seconds
+⚡ With Threading	Parallel conversion using multiple threads	~7 seconds
+
+✅ This shows how threading improves performance in I/O-bound operations, allowing multiple tasks to run simultaneously.
+
+🚀 Part 2 — Spaceship War Game
+
+A simple 2D space shooter game built with the arcade library.
+
+🎯 Features:
+
+Control a spaceship and destroy enemies.
+
+A separate thread (make_enemy) spawns new enemies every 3 seconds.
+
+Background thread runs independently from the main game loop.
+
+Game ends when the player loses all hearts.
+
+🧠 Demonstrates threading in real-time applications — background events (enemy creation) happen without interrupting gameplay.
+
+🧰 Technologies Used
+
+🐍 Python 3
+
+🎮 Arcade — for the game engine
+
+🎧 MoviePy — for video/audio conversion
+
+🧵 Threading — for concurrent execution
+
+📊 Key Concepts
+
+Performance comparison: single-thread vs multi-thread
+
+Safe thread usage in both I/O and graphical programs
+
+Real-time thread handling in a game environment
+
+🕹️ How to Run
+# Install dependencies
+pip install arcade moviepy
+
+# Run the video/audio conversion script
+python convert.py
+
+# Run the game
+python game.py
+
+🎥 Demo Preview
+
+✨ In the conversion part, threading reduces total time from 16s → 7s.
+🛸 In the game, new enemies appear every 3 seconds without freezing gameplay.
